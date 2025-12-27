@@ -12,29 +12,29 @@ fi
 case ${PERCENTAGE} in
 [8-9][0-9] | 100)
     ICON=""
-    ICON_COLOR=0xffa6da95
+    ICON_COLOR=0xffffffff
     ;;
 7[0-9])
     ICON=""
-    ICON_COLOR=0xffeed49f
+    ICON_COLOR=0xffcccccc
     ;;
 [4-6][0-9])
     ICON=""
-    ICON_COLOR=0xfff5a97f
+    ICON_COLOR=0xff999999
     ;;
 [1-3][0-9])
     ICON=""
-    ICON_COLOR=0xffee99a0
+    ICON_COLOR=0xff666666
     ;;
 [0-9])
     ICON=""
-    ICON_COLOR=0xffed8796
+    ICON_COLOR=0xff333333
     ;;
 esac
 
 if [[ $CHARGING != "" ]]; then
     ICON=""
-    ICON_COLOR=0xffeed49f
+    ICON_COLOR=0xffffffff
 fi
 
 sketchybar --set $NAME \
